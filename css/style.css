@@ -282,6 +282,7 @@
   display: flex;
   justify-content: center;
 }
+
 .work-title h1 {
   color: #000;
   font-size: 2.7rem;
@@ -294,6 +295,7 @@
   justify-content: space-between;
   margin: 70px 0px 120px;
 }
+
 .work-img img {
   width: 250px;
   height: 335px;
@@ -312,6 +314,7 @@
 .sponser-text {
   text-align: center;
 }
+
 .sponser-text h1 {
   font-size: 45px;
   font-weight: 700;
@@ -331,6 +334,7 @@
   justify-content: space-between;
   margin-bottom: 130px;
 }
+
 .sponser-img img {
   width: 120px;
 }
@@ -351,4 +355,132 @@ footer {
 
 footer p {
   color: #424242;
+}
+
+/* <== Responsive For Mobile CSS here ==> */
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  /* nav bar here  */
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav-title h2 {
+    font-size: 35px;
+    padding-top: 40px;
+  }
+
+  .nav ul li {
+    margin: 0 10px;
+    font-size: 12px;
+  }
+
+  /* banner part here  */
+  .header-title {
+    font-size: 3rem;
+  }
+
+  .header-descrip {
+    line-height: 26px;
+  }
+
+  .header-btn {
+    font-size: 16px;
+    padding: 16px;
+  }
+
+  /* feature part here */
+  .feature {
+    flex-direction: column;
+  }
+
+  .feature-img {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .feature-text {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    margin-top: 90px;
+  }
+
+  /* experiance part here  */
+  .experiance {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .experiance-text {
+    width: 100%;
+  }
+
+  .experiance-btn button {
+    font-size: 2rem;
+  }
+
+  .exper-paragraph {
+    padding: 30px 0px;
+  }
+
+  .experiance-img {
+    width: 100%;
+    position: relative;
+  }
+
+  .experiance-btn button {
+    font-size: 20px;
+    padding: 20px 20px 10px;
+  }
+
+  .experiance-btn {
+    position: static;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  /* Fact part here  */
+  .fact-box {
+    flex-direction: column;
+  }
+
+  .fact-box ul {
+    margin: 15px 0;
+  }
+
+  /* Work part here  */
+  .work-img {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+
+  #work-img-2 {
+    width: 250px;
+  }
+
+  /* sponser img here  */
+  .sponser-img {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  .sponser-img img {
+    width: 40%;
+    margin: 15px;
+  }
+
+  /* footer part here  */
+
+  footer {
+    margin-bottom: 30px;
+  }
+
+  footer p {
+    font-size: 12px;
+    text-align: center;
+    padding: 0px 20px;
+  }
 }
